@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #DBD9D7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal{
+    border-radius: 5%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 49% 1%;
+    width:55%;
+    margin: 0 auto;
+    margin-top:5%;
+    padding: 4% 3%;
+}
+.modal-info{
+    padding: 0 15% 0 0;
+}
+.modal-info span:first-child{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    color:#9a8f7f
+}
+.modal-info span:nth-child(2){
+    font-size: 35px;
+    color: #36524A;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modal-info span{
+    display: block;
+}
+.modal-info p{
+    padding-bottom: 10%;
+}
+.modal-info span{
+    padding-bottom: 10%;
+}
+.modal-info div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.modal-info div button{
+    text-transform: capitalize;
+    border: 0px;
+    display: block;
+    block-size: 60px;
+    margin-top: 15%;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modal-info div button:nth-child(2){
+    margin-top: 12% !important;
+}
+.acceptButton{
+    background-color: #36524A;
+    color: white;
+}
+.rejectButton{
+    background-color: white;
+}
+.modal-itemSummary{
+    background-color: #F6F4F1;
+    padding:10%;
+    border-radius: 5%;
+}
+.modal-itemSummaryInfo{
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-itemSummaryInfo img{
+    width: 75%;
+    border-radius: 15%;
+    margin-left:25%
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-itemSummaryCostInfo > span,.modal-itemSummaryInfo div{
+    display: flex;
+}
+.modal-itemSummaryInfo div{
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.modal-itemSummaryCostInfo span{
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    justify-content: space-between;
+}
+#bezel{
+    color:#217f64
+}
+
+#icon{
+    position: relative;
+    bottom:5%;
 }
