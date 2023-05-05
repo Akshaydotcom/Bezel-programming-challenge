@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -57,8 +59,8 @@ function App() {
             If you do not accept, it will be automatically rejected.
           </p>
           <div>
-            <button className="acceptButton">accept sale</button>
-            <button className="rejectButton">reject sale</button>
+            <button className="acceptButton" >accept sale</button>
+            <button className="rejectButton" >reject sale</button>
           </div>
         </div>
         {orders && (
